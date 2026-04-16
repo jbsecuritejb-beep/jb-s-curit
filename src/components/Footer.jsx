@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Shield, Facebook, Instagram, MessageCircle } from 'lucide-react';
 
 export default function Footer() {
@@ -110,9 +111,9 @@ export default function Footer() {
             © {new Date().getFullYear()} JB Sécurité — Tous droits réservés
           </p>
           <div className="flex gap-6">
-            <span className="font-mono-tech text-[10px] uppercase tracking-[0.15em] text-muted-foreground cursor-pointer hover:text-primary transition-colors">
+            <Link to="/mentions-legales" className="font-mono-tech text-[10px] uppercase tracking-[0.15em] text-muted-foreground hover:text-primary transition-colors">
               Mentions légales
-            </span>
+            </Link>
             <span className="font-mono-tech text-[10px] uppercase tracking-[0.15em] text-muted-foreground cursor-pointer hover:text-primary transition-colors">
               Politique de confidentialité
             </span>
