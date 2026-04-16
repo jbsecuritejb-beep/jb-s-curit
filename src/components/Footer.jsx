@@ -1,5 +1,5 @@
 import React from 'react';
-import { Shield, Facebook, Instagram } from 'lucide-react';
+import { Shield, Facebook, Instagram, MessageCircle } from 'lucide-react';
 
 export default function Footer() {
   const handleScroll = (href) => {
@@ -50,6 +50,15 @@ export default function Footer() {
               >
                 <Instagram className="w-4 h-4 text-primary" />
                 <span className="font-heading font-medium text-sm text-foreground">Instagram</span>
+              </a>
+              <a
+                href="https://wa.me/330786747759"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-secondary border border-border hover:border-primary/40 hover:text-primary transition-all"
+              >
+                <MessageCircle className="w-4 h-4 text-primary" />
+                <span className="font-heading font-medium text-sm text-foreground">WhatsApp</span>
               </a>
             </div>
           </div>
