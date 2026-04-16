@@ -1,5 +1,5 @@
 import React from 'react';
-import { Shield, Facebook } from 'lucide-react';
+import { Shield, Facebook, Instagram } from 'lucide-react';
 
 export default function Footer() {
   const handleScroll = (href) => {
@@ -32,15 +32,26 @@ export default function Footer() {
                 Opérationnel 24/7
               </span>
             </div>
-            <a
-              href="https://www.facebook.com/profile.php?id=61580033994977"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-secondary border border-border hover:border-primary/40 hover:text-primary transition-all"
-            >
-              <Facebook className="w-4 h-4 text-primary" />
-              <span className="font-heading font-medium text-sm text-foreground">Suivez-nous sur Facebook</span>
-            </a>
+            <div className="flex flex-wrap gap-3">
+              <a
+                href="https://www.facebook.com/profile.php?id=61580033994977"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-secondary border border-border hover:border-primary/40 hover:text-primary transition-all"
+              >
+                <Facebook className="w-4 h-4 text-primary" />
+                <span className="font-heading font-medium text-sm text-foreground">Facebook</span>
+              </a>
+              <a
+                href="https://www.instagram.com/jb_securite?igsh=c3RsM3I4dmxqa3cz"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-secondary border border-border hover:border-primary/40 hover:text-primary transition-all"
+              >
+                <Instagram className="w-4 h-4 text-primary" />
+                <span className="font-heading font-medium text-sm text-foreground">Instagram</span>
+              </a>
+            </div>
           </div>
 
           {/* Navigation */}

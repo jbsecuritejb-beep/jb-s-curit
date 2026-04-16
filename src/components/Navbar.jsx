@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Phone, Facebook } from 'lucide-react';
+import { Menu, X, Phone, Facebook, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -68,6 +68,15 @@ export default function Navbar() {
             >
               <Facebook className="w-4 h-4" />
               <span>FACEBOOK</span>
+            </a>
+            <a
+              href="https://www.instagram.com/jb_securite?igsh=c3RsM3I4dmxqa3cz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-sm font-mono-tech text-muted-foreground hover:text-primary transition-colors"
+            >
+              <Instagram className="w-4 h-4" />
+              <span>INSTAGRAM</span>
             </a>
             <Button
               onClick={() => handleClick('#contact')}
