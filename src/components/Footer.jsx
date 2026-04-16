@@ -1,5 +1,5 @@
 import React from 'react';
-import { Shield } from 'lucide-react';
+import { Shield, Facebook } from 'lucide-react';
 
 export default function Footer() {
   const handleScroll = (href) => {
@@ -26,12 +26,21 @@ export default function Footer() {
             <p className="font-body text-sm text-muted-foreground leading-relaxed max-w-sm mb-6">
               Entreprise de sécurité privée basée à Amiens. Nous assurons la protection de vos événements, chantiers et établissements avec professionnalisme et rigueur.
             </p>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 mb-4">
               <Shield className="w-4 h-4 text-primary" />
               <span className="font-mono-tech text-[11px] uppercase tracking-[0.15em] text-muted-foreground">
                 Opérationnel 24/7
               </span>
             </div>
+            <a
+              href="https://www.facebook.com/profile.php?id=61580033994977"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-secondary border border-border hover:border-primary/40 hover:text-primary transition-all"
+            >
+              <Facebook className="w-4 h-4 text-primary" />
+              <span className="font-heading font-medium text-sm text-foreground">Suivez-nous sur Facebook</span>
+            </a>
           </div>
 
           {/* Navigation */}

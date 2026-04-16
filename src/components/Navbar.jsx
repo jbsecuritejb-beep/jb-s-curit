@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Phone } from 'lucide-react';
+import { Menu, X, Phone, Facebook } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -60,9 +60,14 @@ export default function Navbar() {
 
           {/* Desktop CTA */}
           <div className="hidden lg:flex items-center gap-4">
-            <a href="tel:+33000000000" className="flex items-center gap-2 text-sm font-mono-tech text-muted-foreground hover:text-primary transition-colors">
-              <Phone className="w-4 h-4" />
-              <span>APPELER</span>
+            <a
+              href="https://www.facebook.com/profile.php?id=61580033994977"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-sm font-mono-tech text-muted-foreground hover:text-primary transition-colors"
+            >
+              <Facebook className="w-4 h-4" />
+              <span>FACEBOOK</span>
             </a>
             <Button
               onClick={() => handleClick('#contact')}
