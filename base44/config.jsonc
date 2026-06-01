@@ -1,0 +1,9 @@
+{
+  "name": "JB S\u00c9CURIT\u00c9",
+  "site": {
+    "installCommand": "npm install",
+    "buildCommand": "npm run build",
+    "serveCommand": "npm run dev",
+    "outputDirectory": "./dist"
+  }
+}
